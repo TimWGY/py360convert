@@ -16,7 +16,7 @@ def e2p(e_img, fov_deg, u_deg, v_deg, out_hw, in_rot_deg=0, mode='bilinear'):
     try:
         h_fov, v_fov = fov_deg[0] * np.pi / 180, fov_deg[1] * np.pi / 180
     except:
-        h_fov, v_fov = fov, fov
+        h_fov, v_fov = fov_deg, fov_deg
     in_rot = in_rot_deg * np.pi / 180
 
     if mode == 'bilinear':
